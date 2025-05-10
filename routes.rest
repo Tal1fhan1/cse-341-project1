@@ -1,2 +1,5 @@
-#GET Contacts
+#GET all contacts
 GET https://project1-q35a.onrender.com/contacts
+
+#GET single contact
+GET https://project1-q35a.onrender.com/contacts/681f8af8101e0d99bf6ca87b
