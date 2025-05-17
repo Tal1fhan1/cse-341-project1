@@ -1,5 +1,39 @@
-#GET all contacts
-GET https://project1-q35a.onrender.com/contacts
+### GET all contacts
+GET http://localhost:3000/contacts
 
-#GET single contact
-#GET https://project1-q35a.onrender.com/contacts/681f8af8101e0d99bf6ca87b
+### GET single contact
+GET http://localhost:3000/contacts/681f8af8101e0d99bf6ca87b
+
+### Create contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Wick",
+    "email": "babayaga@database.com",
+    "favoriteColor": "Black",
+    "birthday": "04-Apr-1961"
+}
+
+### Update Contact
+PUT http://localhost:3000/contacts/681f8c69101e0d99bf6ca87d HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Cameron",
+    "lastName": "Naidoo",
+    "email": "cameron.naidoo@database.com",
+    "favoriteColor": "Red",
+    "birthday": "02-Feb-2002"
+}
+
+### Delete Contact
+DELETE http://localhost:3000/contacts/68290a9e335f30e8883f611a
+
+
+### GET All Contacts (Render)
+GET https://project1-q35a.onrender.com/contacts/
+
+### GET single contact (Render)
+GET https://project1-q35a.onrender.com/contacts/681f8af8101e0d99bf6ca87b
